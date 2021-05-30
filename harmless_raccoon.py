@@ -7,7 +7,7 @@ trash_folder = '/home/{}/.local/share/Trash/files'
 
 def main():
     global trash_folder
-    filename = sys._MEIPASS
+    filename = __file__
     user = pwd.getpwuid(os.getuid())[0]
     trash_folder = trash_folder.format(user)
 
